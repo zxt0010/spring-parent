@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ms-spring-beans" />
+        <module name="ms-spring-webmvc" />
+        <module name="mall" />
+        <module name="ms-spring-core" />
+        <module name="ms-spring-web" />
+        <module name="ms-spring-context" />
+        <module name="ms-spring-aop" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

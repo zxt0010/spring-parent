@@ -1,0 +1,8 @@
+# Project exclude paths
+/mall/target/
+/ms-spring-aop/target/
+/ms-spring-beans/target/
+/ms-spring-context/target/
+/ms-spring-core/target/
+/ms-spring-web/target/
+/ms-spring-webmvc/target/

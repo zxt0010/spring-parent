@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans.dtd">-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="goodsService" class="com.mszlu.spring.mall.service.impl.GoodsServiceImpl" >
+        <property name="test" value="属性test"></property>
+        <property name="goodsDao" ref="goodsDao"></property>
+    </bean>
+
+    <bean id="goodsDao" class="com.mszlu.spring.mall.dao.impl.GoodsDaoImpl" init-method="init">
+        <property  name = "goodsService" ref ="goodsService" ></property>
+    </bean>
+
+    <bean id="beanPostProcessor" class="com.mszlu.spring.mall.factory.MyBeanPostProcessor"/>
+</beans>
